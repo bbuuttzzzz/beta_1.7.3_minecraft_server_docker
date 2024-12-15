@@ -21,5 +21,4 @@ RUN mkdir world ; chown app world
 
 VOLUME /app/world
 
-ENTRYPOINT ["java", "-jar", "server.jar", "nogui"]
-
+ENTRYPOINT ["java", "-jar", "server.jar", "nogui" ,"-Xmx1024M", "-Xms1024M"]
